@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: url(img/bg.jpg) no-repeat center center/cover;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(255, 164, 27, .7);
+    width: 70rem;
+    height: 55rem;
+    border-radius: 2.5rem;
+}
+
+h1 {
+    font-size: 5.5rem;
+    color: #1e1a15;
+    padding: 5rem 0;
+    letter-spacing: .5rem;
+}
+
+p:not(.first-p) {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e0d9d2;
+    padding-top: 3rem;
+}
+
+.sum{
+    margin-bottom: 3rem;
+}
+
+.message {
+    font-style: italic;
+    font-size: 3.5rem;
+}
+
+.btn {
+    width: 30rem;
+    display: block;
+    margin: .5rem auto;
+    border: none;
+    border-radius: .5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1e1a15;
+    color: #e0d9d2;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
