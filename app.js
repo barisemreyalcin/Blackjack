@@ -7,6 +7,14 @@ let isAlive = false;
 let message = "";
 let messageParagraph = document.querySelector(".message");
 
+let player = {
+    name: "Baris",
+    chips: "485"
+}
+
+let playerInfo = document.querySelector(".player")
+playerInfo.textContent = player.name + ": $" + player.chips;
+
 function getRandomCard() {
     // J-Q-K(11-12-13): 10 and A(1): 11
     let randomCard = Math.floor((Math.random() * 13)  + 1);
