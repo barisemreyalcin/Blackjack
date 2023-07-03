@@ -1,16 +1,25 @@
-let firstCard = Math.floor((Math.random() * 10)  + 2);
-let secondCard = Math.floor((Math.random() * 10)  + 2);
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let displaySum = document.querySelector(".sum");
-
 let displayCards = document.querySelector(".cards");
-
 let hasBlackjack = false;
 let isAlive = true;
-
 let message = "";
 let messageParagraph = document.querySelector(".message");
+
+function getRandomCard() {
+    // J-Q-K(11-12-13): 10 and A(1): 11
+    let randomCard = Math.floor((Math.random() * 13)  + 1);
+    if(randomCard > 10) {
+        return 10;
+    } else if (randomCard === 1) {
+        return 11;
+    } else {
+        return randomCard;
+    }
+}
 
 function startGame(){
     renderGame();
@@ -38,7 +47,7 @@ function renderGame(){
 }
 
 function newCard(){
-    let thirdCard = Math.floor((Math.random() * 10)  + 2);
+    let thirdCard = getRandomCard();
     sum += thirdCard;
     cards.push(thirdCard)
     renderGame();
