@@ -68,3 +68,58 @@ p:not(.first-p) {
 .btn:hover {
     transform: scale(1.05);
 }
+
+/* Responsive */
+@media(max-width: 1200px) {
+    html {
+        font-size: 9.5px;
+    }
+}
+
+@media(max-width: 992px) {
+    html {
+        font-size: 8.5px;
+    }
+
+    body {
+        height: 150vh;
+    }
+    
+    h1 {
+        padding: 3rem 0;
+    }
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+
+    body {
+        height: 120vh;
+    }
+
+    .container {
+        height: 50rem;
+    }
+
+    .btn {
+        display: inline-block;
+    }
+
+}
+
+@media(max-width: 576px) {
+    body {
+        height: 100vh;
+    }
+    
+    .container {
+        width: 40rem;
+        height: 70rem;
+    }
+
+    .first-p {
+        font-size: 2.8rem;
+    }
+}
